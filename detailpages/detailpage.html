@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon"
+    href=https://cdn.shopify.com/s/files/1/0570/4296/0516/t/2/assets/favicon.png?v=10926393497054477015"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--bootstrap icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+     <!--bootstrap5 css-->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+     crossorigin="anonymous"
+   />
+    <!--Fonts css Sofia -->
+    <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
+    <!--fontawesome icon cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+     <!-- Font Awesome -->
+     <link
+     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+     rel="stylesheet"
+   />
+     <!-- JavaScript Bundle with Popper -->
+     <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+     crossorigin="anonymous"
+   ></script>
+    <link rel="stylesheet" href="./detailpage.css" />
+    <title>Products_ Pretzels-fast food</title>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../home.html"
+          ><img src="../assets/logo.webp" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../home.html#shop">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./featured.html">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../home.html#pages">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../blogs.html">Blogs</a>
+            </li>
+          </ul>
+          <div class="navbar_right">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-bag-dash"></i>
+            <a href="./Home/whislist.html" style="color: #000">
+              <i class="bi bi-heart"></i
+            ></a>
+            <i class="bi bi-person" id="button"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Links-->
+    <div class="Link">
+      <h4>
+        <a href="./home.html" target="blank">Home</a><span class="arrow">></span
+        ><span>Fried Shrimp</span>
+      </h4>
+    </div>
+    <!--detail-->
+    <div class="details">
+      <div class="left_section_details">
+        <div class="slider">
+          <div class="product">
+            <img
+              src="../assets/detailsproduct/2a.webp"
+              alt=""
+              onclick="clickme(this)"
+            />
+            <img
+              src="../assets/detailsproduct/2b.webp"
+              alt=""
+              onclick="clickme(this)"
+            />
+            <img
+              src="../assets/detailsproduct/2c.webp"
+              alt=""
+              onclick="clickme(this)"
+            />
+          </div>
+          <div class="preview">
+            <img src="../assets/detailsproduct/2a.webp" id="imagebox" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="right_section_details">
+        <h2 class="right_heading">Fried Shrimps</h2>
+        <p class="right_price">$28.00 USD</p>
+        <div class="rat">
+          <p class="right_rating">
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </p>
+          <span class="rating_p">No reviews</span>
+        </div>
+        <hr class="hr" />
+        <p class="right_paragraph">
+          Things You Need To Know There are many variations of passages of Lorem
+          Ipsum available, but the majority have suffered alteration in some
+          form, by injected humour, or randomised words which don't look even
+          slightly believable. If you are going to use a passage of Lorem Ipsum,
+          you need to...
+        </p>
+        <h5 class="h5_right">
+          <span>19</span>sold in last <span>26</span>Hours
+        </h5>
+        <div class="heading_in_rows">
+          <h4>Size Guide</h4>
+          <h4>Delivery & Return</h4>
+          <h4>Ask a Question</h4>
+        </div>
+        <div class="increment_btn">
+          <form>
+            <input class="input_counter" type="number" id="number" value="0" />
+            <div class="up_down">
+              <div
+                class="value-button"
+                id="increase"
+                onclick="increaseValue()"
+                value="Increase Value"
+              >
+                <i class="bi bi-caret-up-fill"></i>
+              </div>
+              <hr />
+              <div
+                class="value-button"
+                id="decrease"
+                onclick="decreaseValue()"
+                value="Decrease Value"
+              >
+                <i class="bi bi-caret-down-fill"></i>
+              </div>
+            </div>
+          </form>
+          <button class="add_to_cart">ADD TO CART</button>
+        </div>
+        <button class="right_buy">BUY IT NOW</button>
+        <hr class="hr" />
+        <h5 class="h5_right">Real time <span>30</span> Visitor right now</h5>
+        <p class="right_cat">
+          Categories : <span><a href="../home.html">Home Page</a></span>
+        </p>
+      </div>
+    </div>
+    <div class="detail_box">
+      <div class="box1">
+        <span><img src="../assets/plane.png" alt="plane" /></span>
+        <h4>WORLDWIDE SHIPPING</h4>
+      </div>
+      <div class="box1">
+        <span><img src="../assets/return.png" alt="return" /></span>
+        <h4>FREE 60-DAY RETURNS</h4>
+      </div>
+      <div class="box1">
+        <span><img src="../assets/badge.png" alt="plane" /></span>
+        <h4>24 MONTH WARRANTY</h4>
+      </div>
+      <div class="box1">
+        <span><img src="../assets/verified.png" alt="plane" /></span>
+        <h4>100% SECRUE CHECKOUT</h4>
+      </div>
+    </div>
+    <hr />
+    <div class="details_link">
+      <div class="first_detail_link">
+        <button class="detail_btn" onclick="show1()">DESCRIPTION</button>
+      </div>
+      <div class="first_detail_link">
+        <button class="detail_btn" onclick="show2()">
+          ADDITIONAL INFORMATION
+        </button>
+      </div>
+      <div class="first_detail_link">
+        <button class="detail_btn" onclick="show3()">REVIEW</button>
+      </div>
+    </div>
+    <hr />
+    <div class="disc" id="div1">
+      <div class="first_disc">
+        <div class="blog_detail_img">
+          <img src="../assets/detailsproduct/1stblog.webp" alt="" />
+        </div>
+        <div class="blog_text">
+          <h4>Things You Need To Know</h4>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text.
+          </p>
+        </div>
+      </div>
+      <div class="first_disc">
+        <div class="blog_text">
+          <h4>Things You Need To Know</h4>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text.
+          </p>
+        </div>
+        <div class="blog_detail_img">
+          <img src="../assets/detailsproduct/1stblog.webp" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="add_info" id="div2">
+      <div class="additional">
+        <div class="left_add">
+          <div class="left_add1">
+            <p class="left_addp">MORE INFOMATION TO YOU</p>
+            <h2 class="left_addh2">Things You Need To Know</h3>
+            <p>
+              We use industry standard SSL encryption to protect your details.
+              Potentially sensitive information such as your name, address and
+              card details are encoded so they can only be read on the secure
+              server.
+            </p>
+            <h4 class="add_points">Safe Payments</h4>
+            <h4 class="add_points">Accept Credit Cart</h4>
+            <h4 class="add_points">Different Payment Method</h4>
+            <h4 class="add_points">Price Include VAT</h4>
+            <h4 class="add_points">Easy To Order</h4>
+          </div>
+          <div class="left_add2">
+            <h2 class="add2_head">Express Delivery</h2>
+            <h4 class="add_points">Europe & USA within 2-4 days</h4>
+            <h4 class="add_points">Rest of the world within 3-7 days</h4>
+            <h4 class="add_points">Selected locations</h4>
+            <h2 class="add2_head">Need More Information</h2>
+             <span>
+              <a href="">Orders & Shipping</a>
+             </span>
+             <span>
+              <a href="">Returns & Refunds</a>
+             </span>
+              <span>
+                 <a href="">Payments</a>
+              </span> 
+              <span>
+                 <a href="">Your Orders</a>
+              </span>
+          
+          </div>
+        </div>
+        <div class="right_add">
+          <img src="../assets/detailsproduct/2a.webp" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="review" id="div3">
+      <h2>CUSTOMER REVIEWS</h2>
+      <div class="write">
+        <p>No reviews yet</p>
+        <button onclick="show_hide()">Write a Review</button>
+      </div>
+      <form action="" id="form">
+        <p>Write a review</p>
+        <br />
+        <label for="">Name</label><br />
+        <input class="input" type="text" placeholder="Enter your name" /><br>
+        <label for="">Email</label><br />
+        <input class="input" type="text" placeholder="pretzels@.gmail.com" /><br>
+        <label>Rating</label>
+        <div class="rat">
+          <p class="right_rating">
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+            <i class="bi bi-star"></i>
+          </p>
+          <span class="rating_p">No reviews</span>
+        </div>
+        <label for="">review title</label><br />
+        <input class="input" type="text" placeholder="Give Your Review a Title" /><br />
+        <label for="">Body of review(1500)</label><br />
+        <textarea
+        class="text_area"
+          name=""
+          id=""
+          cols="156"
+          rows="25"
+          placeholder="Write your comment here"
+        ></textarea>
+        <button class="submit">Submit Review</button>
+      </form>
+    </div>
+    <hr>
+    <div class="socials_detail">
+   <span><i class="bi bi-facebook"></i> </span> 
+   <span> 
+    <i class="bi bi-twitter"></i>   
+  </span>
+  <span>
+    <i class="bi bi-pinterest"></i>
+  </span>
+</div>
+    <hr>
+    <h1 class="related">Related Products</h1>
+
+    <!--realted products-->
+    <div class="product_cards">
+    <div class="product_item">
+      <div class="product_img">
+        <div class="card" style="width: 20rem">
+          <a href="./detailpages/detailpage.html"
+            ><img
+              class="card-img-top"
+              src="../assets/seller/1.webp"
+              alt="product 1 "
+          /></a>
+        </div>
+        <ul>
+          <li>
+            <a href=""><i class="fa fa-search"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="bi bi-bag-dash"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-heart-o"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <h6><a href="">Fried Shrimp</a></h6>
+      <p class="product_price"><span>$28.00</span></p>
+    </div>
+
+    <div class="product_item">
+      <div class="product_img">
+        <div class="card" style="width: 20rem">
+          <a href=""
+            ><img
+              class="card-img-top"
+              src="../assets/seller/2.webp"
+              alt="product 2 "
+          /></a>
+        </div>
+        <figure class="bandage">
+          <span class="sale_percent">-9%</span>
+        </figure>
+        <ul>
+          <li>
+            <a href=""><i class="fa fa-heart-o"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-search"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="bi bi-bag-dash"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <h6><a href="">Ham Sandwich</a></h6>
+      <p class="product_price"><span style="color: #979797; padding-right: 4px; font-family: SofiaPro; font-size: 15px; font-weight: 700; "><s>$30.00</s></span><span>$21.00</span></p>
+    </div>
+
+    <div class="product_item">
+      <div class="product_img">
+        <div class="card" style="width: 20rem">
+          <a href=""
+            ><img
+              class="card-img-top"
+              src="../assets/seller/3.webp"
+              alt="product 3 "
+          /></a>
+        </div>
+        <ul>
+          <li>
+            <a href=""><i class="fa fa-heart-o"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-search"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="bi bi-bag-dash"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <h6><a href="">Hamburger Veggie</a></h6>
+      <p class="product_price"><span>$25.00</span></p>
+    </div>
+
+    <div class="product_item">
+      <div class="product_img">
+        <div class="card" style="width: 20rem">
+          <a href=""
+            ><img
+              class="card-img-top"
+              src="../assets/seller/4.webp"
+              alt="product 4 "
+          /></a>
+        </div>
+        <ul>
+          <li>
+            <a href=""><i class="fa fa-heart-o"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-search"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="bi bi-bag-dash"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <h6><a href="">Sushi Sashimi</a></h6>
+      <p class="product_price"><span>$20.00</span></p>
+    </div>
+    </div>
+    <!--About Page-->
+<h6 style="visibility: hidden;">hide about</h6>
+<div class="about">
+  <div class="first_section">
+    <img src="../assets/logo.webp" alt="logo">
+    <p>Sophisticated simplicity for the<br>
+      independent mind.</p>
+      <div class="icons">
+       <a href=""><i class="bi bi-twitter"></i></a>
+       <a href=""> <i class="bi bi-dribbble"></i></a>
+        <a href=""><i class="bi bi-behance"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+      </div>
+  </div>
+  <div class="second_section">
+    <h3>Help & Information</h3>
+    <ul>
+      <li> <a href="">About us</a></li>
+      <li> <a href="">Privacy Policy</a></li>
+      <li> <a href="">Term & Condition</a></li>
+      <li> <a href="">Production Return</a></li>
+      <li> <a href="">WholeSale Policy</a></li>
+    </ul>
+  </div>
+  <div class="third_section">
+    <h3>About Us</h3>
+    <ul>
+      <li> <a href="">Pagination</a></li>
+      <li> <a href="">Contact</a></li>
+      <li> <a href="">Term & Condition</a></li>
+      <li> <a href="">Acessories</a></li>
+      <li> <a href="">Home Page</a></li>
+    </ul>
+  </div>
+  <div class="fourth_section">
+    <h3>Categories</h3>
+    <ul>
+      <li> <a href="">Menu Items</a></li>
+      <li> <a href="">Help Center</a></li>
+      <li> <a href="">Address Store</a></li>
+      <li> <a href="">Privacy Policy</a></li>
+      <li> <a href="">WholeSale Policy</a></li>
+    </ul>
+  </div>
+</div>
+    <script src="./detail.js"></script>
+  </body>
+</html>

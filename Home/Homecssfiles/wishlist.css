@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.navbar-nav {
+    margin-left: 26%;
+  }
+  .navbar-brand img {
+    width: 190px;
+    cursor: pointer;
+  }
+  .nav-item {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Sofia Pro", sans-serif;
+  }
+  .nav-item .nav-link {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+  }
+  .nav-link:hover {
+    color: orange;
+  }
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: rgb(250, 168, 17);
+    transition: width 0.5s;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  .navbar_right {
+    margin-right: 50px;
+  }
+  .navbar_right i {
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+
+  .navbar-toggler {
+    color: #000;
+  }
+  .navbar-white .navbar-toggler-icon {
+    background-image: url("/assets/menu-burger.svg") !important;
+  }
+/*collection banner */
+.col_ban{
+    background: url('/assets/collectionbanner.webp');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    position: relative;
+    height: 200px;
+}
+.info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Sofia Pro',sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+.col_ban h4{
+    font-size: 13px;
+}
+h4 a{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 5px;
+}
+h4 a:hover{
+    color: orange;
+}
+h4 span{
+    color: white;
+    padding-left: 6px;
+    font-family: 'Sofia Pro';
+}
+h4 .arrow{
+    font-size: 10px;
+    font-weight: 800;
+    font-family: 'Sofia Pro';
+
+}
+.col_ban h4{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+    margin-top: 10px;
+}
+
+/*About page*/
+.about{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 30px;
+}
+.first_section img{
+    width: 170px;
+    margin-top: 40px;
+}
+.first_section p{
+    margin-top: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #000;
+    font-size: 14px;
+}
+.first_section .icons{
+    padding: 7px;
+    margin-left: -12px;
+}
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
+.first_section .icons i{
+    padding: 9px;
+}
+.icons i:hover{
+    color: orange;
+    cursor: pointer;
+}
+.second_section, .third_section ,.fourth_section{
+    margin-top: 40px;
+}
+.second_section h3{
+    font-family: 'Sofia Pro',sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.second_section h3::after{
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 7px;
+    width: 20%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+}
+.second_section ul{
+    display: block;
+    margin-left: -34px;
+    margin-top: 25px;
+}
+ul a{
+    text-decoration: none;
+    color: #000;
+}
+ul li :hover{
+    color: orange;
+}
+.third_section h3{
+    font-family: 'Sofia Pro',sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.third_section h3::after{
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 7px;
+    width: 20%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+}
+.third_section ul{
+    display: block;
+    margin-left: -34px;
+    margin-top: 25px;
+
+}
+.fourth_section h3{
+    font-family: 'Sofia Pro',sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.fourth_section h3::after{
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 7px;
+    width: 20%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+}
+.fourth_section ul{
+    display: block;
+    margin-left: -34px;
+    margin-top: 25px;
+}
+ @media (max-width:575.98px){
+        .about{
+            display: block;
+            text-align: center;
+            width: 80%;
+            margin-left: 12%;
+            margin-top: 10px;
+        }
+        .about ul{
+            margin: 100px;
+        }
+        .second_section ul {
+            margin-top: 20px;
+            margin-bottom: 0px;
+            width: 100%;
+            text-align: center;
+        }
+        .second_section ul li {
+            padding: 10px;
+            font-size: 14px;
+            margin-left: 50px;
+        }
+        .second_section {
+            text-align: center;
+            margin-top: 13px;
+        }
+        .third_section ul {
+            margin-top: 5px;
+            margin-bottom: 0px;
+            width: 100%;
+            text-align: center;
+        }
+        .third_section ul li {
+            padding: 10px;
+            font-size: 14px;
+            margin-left: 50px;
+    
+        }
+        .fourth_section ul {
+            margin-top: 5px;
+            width: 100%;
+            text-align: center;
+        }
+        .fourth_section ul li {
+            padding: 10px;
+            font-size: 14px;
+            margin-left: 50px;
+    
+        }
+        .second_section h3::after{
+            width: 10%;
+            margin-left: 195px;
+        }
+        .third_section h3::after{
+            width: 10%;
+            margin-left: 195px;
+        }
+        .fourth_section h3::after{
+            margin-left: 195px;
+            width: 10%;
+        }
+        }
+         @media (min-width: 576px) and (max-width:768.95px){
+            .about{
+                display: block;
+                text-align: center;
+                width: 80%;
+                margin-left: 12%;
+                margin-top: 10px;
+            }
+            .about ul li{
+                list-style: none;
+                padding: 5px;
+            }
+            .about h3::after{
+                margin-left: 270px;
+                width: 10%;
+            }
+         }
+    /*navbar responsive*/
+    @media (max-width: 575.98px){
+        .navbar-brand img{
+            width: 120px;
+        }
+        .navbar-toggler-icon{
+            width: 20px;
+            border: none;
+        }
+        .navbar-toggler:focus {
+            text-decoration: none;
+        }
+        button.navbar-toogler{
+            display: none;
+        }
+        .navbar-collapse{
+            background-color: #fff;
+            margin-top: 30px;
+            display: flex;
+        }
+        .navbar-nav {
+            margin-left: 2%;
+        }
+          .navbar_right i{
+              display: block;
+              margin: 30px;
+              margin-right: 300px;
+          }
+    }
+    @media (min-width: 576px) and (max-width:768.95px){
+        .navbar{
+            width: 90%;
+        }
+        .navbar-brand img{
+            width: 120px;
+        }
+        .navbar-toggler-icon{
+            width: 20px;
+            border: none;
+        }
+        .navbar-toggler:focus {
+            text-decoration: none;
+        }
+        button.navbar-toogler{
+            display: none;
+        }
+        .navbar-collapse{
+            background-color: #fff;
+            margin-top: 30px;
+            display: flex;
+        }
+        .navbar-nav {
+            margin-left: 2%;
+        }
+          .navbar_right i{
+              display: block;
+              margin: 30px;
+              margin-right: 300px;
+          }
+    }

@@ -1,0 +1,833 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.navbar-nav {
+    margin-left: 26%;
+  }
+  .navbar-brand img {
+    width: 190px;
+    cursor: pointer;
+  }
+  .nav-item {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Sofia Pro", sans-serif;
+  }
+  .nav-item .nav-link {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+  }
+  .nav-link:hover {
+    color: orange;
+  }
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: rgb(250, 168, 17);
+    transition: width 0.5s;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  .navbar_right {
+    margin-right: 50px;
+  }
+  .navbar_right i {
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+
+  .navbar-toggler {
+    color: #000;
+  }
+  .navbar-white .navbar-toggler-icon {
+    background-image: url("../assets/menu-burger.svg") !important;
+  }
+
+/*Links*/
+.Link{
+    margin-left: 8%;
+}
+h4 a{
+    text-decoration: none;
+    color: #000;
+    padding-right: 5px;
+}
+h4 a:hover{
+    color: orange;
+}
+h4 span{
+    color: orange;
+    padding-left: 6px;
+    font-family: 'Sofia Pro';
+
+}
+h4 .arrow{
+    font-size: 13px;
+    font-weight: 800;
+    font-family: 'Sofia Pro';
+
+}
+.col_ban h4{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+    margin-top: 10px;
+    font-size: 2px;
+}
+/*images*/
+/*details*/
+.details{
+    display: flex;
+    margin: 3%;
+    justify-content: space-between;
+}
+/*left section details*/
+.left_section_details{
+    flex-basis: 45%;
+    width: 100%;
+    height: auto;
+    padding-right: 90px;
+}
+.slider{
+    height: 80vh;
+    display: flex;
+}
+.product{
+    padding-right: 14px;
+}
+.product img{
+    height: 17vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+.product img:hover{
+    border: 1px solid red;
+}
+/*right section*/
+.right_section_details{
+    font-family: "Sofia Pro";
+}
+.right_heading{
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    padding-right: 40px;
+}
+.right_price{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff871d;
+    text-decoration: none;
+}
+.rat{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.right_rating{
+    color: rgb(194, 141, 43);
+    margin-top: 14px;
+    font-size: 12px;
+}
+.rating_p{
+    margin-top: 14px;
+    color: darkgray;
+    font-size: 13px;
+    margin-left: 13px;
+}
+.hr{
+    color: rgb(192, 187, 187);
+    width: 70%;
+    margin-bottom: 12px;
+}
+.preview img{
+    height: 100%;
+}
+.right_paragraph{
+    font-family: 'Sofia Pro';
+    font-size: 15px;
+    color: #969696;
+    line-height: 1.6;
+    font-weight: 400;
+    padding: 22px 0 0 0;
+    width: 80%;
+}
+.h5_right{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #111111;
+    font-weight: 600;
+}
+.h5_right span{
+    color: rgb(233, 112, 14);
+    padding-left: 6px;
+    padding-right: 6px;
+    font-family:'Sofia Pro';
+    font-size: 16px;
+    font-weight: bold;
+}
+.heading_in_rows{
+    margin-top: 27px;
+    padding: 10px;
+    display: flex;
+}
+.heading_in_rows h4{
+    padding: 10px;
+    font-size: 15px;
+}
+/*increment css*/
+ .increment_btn{
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.increment_btn form{
+    border: 1px solid rgb(207, 204, 204);
+    display: flex;
+    width:90px ;
+}
+form input{
+    width: 45px;
+    height: 81px;
+    text-align: center;
+}
+form .up_down{
+    display: block;
+}
+.up_down .value-button{
+    text-align: center;
+    width: 40px;
+}
+.add_to_cart{
+margin-left: 40px;
+width: 65%;
+height: 59px;
+color: #fff;
+background-color: #ff871d;
+font-size: 16px;
+font-family: 'Sofia Pro',sans-serif;
+letter-spacing: 1.3px;
+cursor: pointer;
+}
+.right_buy{
+width: 45%;
+padding: 18px;
+margin-bottom: 27px;
+background-color: #000;
+color: #fff;
+letter-spacing: 2px;
+word-spacing: 1px;
+font-family: "Sofia pro",sans-serif;
+outline: none;
+border: none;
+}
+.right_buy:hover{
+    background-color: #ff871d;
+    cursor: pointer;
+}
+.right_cat{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.right_cat span a{
+    text-decoration: none;
+    color: #bfbfbf;
+    margin-left: 20px;
+
+}
+.right_cat span :hover{
+    cursor: pointer;
+}
+.detail_box{
+    display: flex;
+    margin-bottom: 70px;
+}
+.detail_box .box1{
+    border: 1px solid #969696;
+    margin-left: 30px;
+    width: 22%;
+    padding: 17px;
+    text-align: center;
+}
+.box1 img{
+    width: 35px;
+    height: 35px;
+}
+.box1 h4{
+    margin-top: 7px;
+    color:#111111;
+    font-size: 12px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+.details_link{
+display: flex;
+margin-top: 20px;
+margin-bottom: 20px;
+justify-content: center;
+}
+.first_detail_link{
+    padding: 14px;
+}
+.first_detail_link .detail_btn{
+    text-decoration: none;
+    color: #969696;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: 'Sofia Pro',sans-serif;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+button:visited{
+    color: #000;
+}
+.first_detail_link:hover .detail_btn::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid #ff871d;
+}
+#div2{
+    display: none;
+}
+#div3{
+    display: none;
+}
+#form{
+    display: none;
+}
+.first_disc{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.blog_detail_img{
+    width: 50%;
+}
+.blog_text{
+    width: 45%;
+    margin-top: 10%;
+    margin-left: -70px;
+}
+.blog_text h4{
+    margin-left: 60px;
+    color: #000;
+    font-family: 'Sofia Pro',sans-serif;
+    font-size: 25px;
+}
+.blog_text p{
+    margin-top: 20px;
+    font-family: SofiaPro;
+    font-size: 15px;
+    color: #969696;
+    line-height: 1.6;
+    font-weight: 400;
+    padding: 22px 0 0 0;
+    width: 80%;
+}
+.blog_detail_img img{
+    width: 500px;
+    height: 500px;
+}
+.add_info{
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 10%;
+}
+.left_add{
+    display: flex;
+    width: 60%;
+}
+.additional{
+    display: flex;
+}
+.right_add img{
+    width: 360px;
+}
+.left_add1 .left_addp{
+    color: #969696;
+    font-size: 14px;
+    font-family: 'Sofia Pro',sans-serif;
+}
+.left_add1 .left_addh2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.left_addh2::after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 2px solid #ff871d;
+    margin-top: 14px;
+    width: 7%;
+}
+.left_add1 p{
+    margin-top: 20px;
+    font-family: 'Sofia Pro';
+    font-size: 15px;
+    color: #969696;
+    line-height: 1.6;
+    font-weight: 400;
+    padding: 22px 0 0 0;
+    width: 60%;
+    margin-bottom: 40px;
+}
+.add_points{
+    color: #969696;
+    padding: 10px;
+    font-size: 13px;
+}
+.left_add2{
+    margin-top: 23%;
+    margin-right: 17%;
+    width: 100%;
+}
+.add2_head{
+    margin-top: 20px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #111111;
+}
+.left_add2 span{
+    margin-top: 20px;
+    display: block;
+}
+.left_add2 a{
+    text-decoration: none;
+    color: #969696;
+}
+.left_add2 :hover a{
+    color: #ff871d;
+}
+.review h2{
+    color: #3d3939;
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-top: 20px;
+    font-family: 'Sofia Pro',sans-serif;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.review{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.review .write{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 13%;
+}
+.write p{
+    color:#3d3939;
+    font-size: 15px;
+    font-family: 'Sofia Pro',sans-serif;
+}
+.write button{
+    color:#969696;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Sofia pro ',sans-serif;
+}
+.write button:hover{
+    color: #ff871d;
+}
+form p{
+    color: #111111;
+    margin-left: 40px;
+}
+form label{
+    color: #969696;
+    letter-spacing: 1px;
+    font-family: 'Sofia pro';
+    font-size: 16px;
+    margin-left: 30px;
+}
+form .input{
+    width:90%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2%;
+    text-align: left;
+    border:  1px solid #969696 !important;
+    font-size: 14px;
+}
+form textarea{
+    margin-left: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+form .submit{
+    color: #fff;
+    background-color: #000;
+    width: 16%;
+    padding: 13px;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70%;
+    font-family: 'Sofia Pro',sans-serif;
+}
+.submit:hover{
+    background-color: #ff871d;
+}
+.socials_detail{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 27px;
+}
+.socials_detail span{
+    padding: 5px;
+}
+.socials_detail span:hover{
+    color: #ff871d;
+    cursor: pointer;
+}
+.related{
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-family: 'Sofia Pro',sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/*related product*/
+.product_item{
+    display: inline-block;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    padding-left: 8px;
+    position: relative;
+}
+.bandage{
+    position: absolute;
+    top: 7px;
+    right: -34px;
+    font-weight: 500;
+    padding: 5px 12px;
+    transform: rotate(45deg);
+    width: 110px;
+    background-color: #e12c43;
+}
+.sale_percent{
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-left: 23px;
+    color: #fff;
+    font-family: 'Sofia Pro';
+}
+.product_img{
+    overflow: hidden;
+    position: relative;
+}
+.product_img img{
+    width: 20rem;
+}
+ul{
+    display: flex;
+}
+ul li{
+    display: flex;
+    text-decoration: none;  
+    padding: 4px;
+}
+.product_img ul{
+    position: absolute;
+    bottom: -20%;
+    width: 20rem;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 10px;
+   transition: transform .5s ease;
+    
+}
+.product_item:hover .product_img ul {
+    bottom: 17px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-5px) translateX(0px);
+}
+ .product_img ul li a{ 
+    color: black;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.product_img ul li a:hover{
+    color: #000;
+    background-color: rgb(255, 123, 0);
+}
+.product_item h6{
+    text-align: center;
+    width: 20rem;
+    margin-top: 15px;
+    font-family: 'Sofia Pro',sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+
+}
+h6 a{
+    text-decoration: none;
+    color: #000;
+}
+h6 a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.product_price{
+    color: rgb(255, 123, 0);
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 600;
+
+}
+@media(max-width:768px){
+    .seller{
+        margin-top: 78%;
+    }
+    .seller_h1{
+        color: rgb(43, 42, 42);
+        font-weight: 500px;
+    }
+    .product_item{
+        width: 10rem;
+        display: inline-block;
+        justify-content: space-between;
+        margin-left: 30px;
+    }
+    .product_img img{
+        max-width: 50%;
+        border-radius: 0;
+    }
+    .card{
+        border: none;
+    }
+    ul{
+        display: flex;
+    }
+    ul li{
+        padding: 2px;
+    }
+    .product_item:hover .product_img ul {
+        bottom: -6px;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-5px) translateX(0px);
+        margin-left: -16px;
+    }
+    .product_img ul{
+        width: 10rem;
+        margin-left: -5px;
+    }
+     .product_img ul li a{ 
+        font-size: 10px;
+        margin-left: 2px;
+    }
+    .product_item h6{
+        text-align: center;
+        width: 10rem;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .product_price span{
+        font-size: 12px;
+    }
+}
+
+/*About page*/
+.about{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 30px;
+}
+.first_section img{
+    width: 170px;
+    margin-top: 40px;
+}
+.first_section p{
+    margin-top: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #000;
+    font-size: 14px;
+}
+.first_section .icons{
+    padding: 7px;
+    margin-left: -12px;
+}
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
+.first_section .icons i{
+    padding: 9px;
+}
+.icons i:hover{
+    color: orange;
+    cursor: pointer;
+}
+.second_section, .third_section ,.fourth_section{
+    margin-top: 40px;
+}
+.second_section h3{
+    font-family: 'Sofia Pro',sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.second_section h3::after{
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 7px;
+    width: 20%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+}
+.second_section ul{
+    display: block;
+    margin-left: -34px;
+    margin-top: 25px;
+}
+ul a{
+    text-decoration: none;
+    color: #000;
+}
+ul li :hover{
+    color: orange;
+}
+.third_section h3{
+    font-family: 'Sofia Pro',sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.third_section h3::after{
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 7px;
+    width: 20%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+}
+.third_section ul{
+    display: block;
+    margin-left: -34px;
+    margin-top: 25px;
+
+}
+.fourth_section h3{
+    font-family: 'Sofia Pro',sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.fourth_section h3::after{
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 7px;
+    width: 20%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+}
+.fourth_section ul{
+    display: block;
+    margin-left: -34px;
+    margin-top: 25px;
+}
+@media (max-width:768px){
+    .about{
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin-left: 12%;
+        margin-top: 10px;
+    }
+    .about ul{
+        margin: 100px;
+    }
+    .second_section ul {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 100%;
+        text-align: center;
+        margin-right: 20px;
+    }
+    .second_section ul li {
+        padding: 10px;
+        font-size: 14px
+    }
+    .second_section {
+        text-align: center;
+        margin-top: 13px;
+    }
+    .third_section ul {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .third_section ul li {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .fourth_section ul {
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    .fourth_section ul li {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .second_section h3::after{
+        width: 10%;
+        margin-left: 135px;
+    }
+    .third_section h3::after{
+        width: 10%;
+        margin-left: 135px;
+    }
+    .fourth_section h3::after{
+        margin-left: 135px;
+        width: 10%;
+    }
+    }

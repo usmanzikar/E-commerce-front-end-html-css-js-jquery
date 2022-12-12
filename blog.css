@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.navbar-nav {
+    margin-left: 26%;
+  }
+  .navbar-brand img {
+    width: 190px;
+    cursor: pointer;
+  }
+  .nav-item {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Sofia Pro", sans-serif;
+  }
+  .nav-item .nav-link {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+  }
+  .nav-link:hover {
+    color: orange;
+  }
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: rgb(250, 168, 17);
+    transition: width 0.5s;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  .navbar_right {
+    margin-right: 50px;
+  }
+  .navbar_right i {
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+
+  .navbar-toggler {
+    color: #000;
+  }
+  .navbar-white .navbar-toggler-icon {
+    background-image: url("./assets/menu-burger.svg") !important;
+  }
+/*collection banner */
+.col_ban{
+    background: url('./assets/homeblog/bn1.webp');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    position: relative;
+
+    height: 400px;
+}
+.info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Sofia Pro',sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+h4 a{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 5px;
+}
+h4 a:hover{
+    color: orange;
+}
+h4 span{
+    color: white;
+    padding-left: 6px;
+    font-family: 'Sofia Pro';
+
+}
+h4 .arrow{
+    font-size: 13px;
+    font-weight: 800;
+    font-family: 'Sofia Pro';
+
+}
+.col_ban h4{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+    margin-top: 10px;
+    font-size: 14px;
+}
+/*Blogs*/
+.blog_news{
+    margin-top: 14%;
+    position: relative;
+    margin-left: 30px;
+    width: 90%;
+    display: flex;
+}
+.blog_img{
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+
+}
+.blog_img img{
+width: 467px;
+min-height: 445px;
+transition: all 0.3s;
+object-fit: cover;
+transform: scale(1);
+display: block;
+
+}
+.blog_img img:hover{
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+}
+.blog_text{
+    top: 13%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #000;
+    background-color: #fff;
+    width: 70px;
+    height: 83px;
+    border-radius: 50%;
+}
+.blog_text h4{
+    text-align: center;
+    font-family: 'Sofia Pro',sans-serif;
+    margin-top: 12px;
+    position: relative;
+}
+.blog_text h5{
+    text-align: center;
+    font-family: 'Sofia Pro',sans-serif;
+    margin-top: 12px;
+    font-size: 15px;
+}
+h4::after{
+    content: '';
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid rgb(62, 61, 61);
+    height: 2px;
+    width: 60%;
+    margin-left: 13px;
+    margin-top: 4px;
+}
+.blog_details{
+    margin-left: 40px;
+    margin-top: 15px;
+    width: 467px;
+}
+.blog_details .news{
+    color: orange;
+    letter-spacing: 2px;
+    font-family: 'Sofia Pro',sans-serif;
+}
+.blog_details h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-family: 'Sofia Pro',sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+.blog_details h2:hover{
+    color: orange;
+    cursor: pointer;
+}
+.blog_details .line{
+width: 15%;
+margin-bottom: 10px;
+}
+.blog_details p{
+    font-size: 14px;
+    font-family: 'Sofia Pro',sans-serif;
+    font-weight: 400;
+    color: #a8a8a8;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.blog_details a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    color: #000;
+    position: relative;
+}
+.blog_details a:hover{
+    color: rgba(243, 142, 10, 0.945);
+}
+.blog_details a::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+.flex{
+    display: flex;
+  
+}
+/*About page*/
+.about{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 30px;
+}
+.first_section img{
+    width: 170px;
+    margin-top: 40px;
+}
+.first_section p{
+    margin-top: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #000;
+    font-size: 14px;
+}
+.first_section .icons{
+    padding: 7px;
+    margin-left: -12px;
+}
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
+.first_section .icons i{
+    padding: 9px;
+}
+.icons i:hover{
+    color: orange;
+    cursor: pointer;
+}
+.second_section, .third_section ,.fourth_section{
+    margin-top: 40px;
+}
+.second_section h3{
+    font-family: 'Sofia Pro',sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.second_section h3::after{
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 7px;
+    width: 20%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+}
+.second_section ul{
+    display: block;
+    margin-left: -34px;
+    margin-top: 25px;
+}
+ul a{
+    text-decoration: none;
+    color: #000;
+}
+ul li :hover{
+    color: orange;
+}
+.third_section h3{
+    font-family: 'Sofia Pro',sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.third_section h3::after{
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 7px;
+    width: 20%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+}
+.third_section ul{
+    display: block;
+    margin-left: -34px;
+    margin-top: 25px;
+
+}
+.fourth_section h3{
+    font-family: 'Sofia Pro',sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.fourth_section h3::after{
+    content: '';
+    position: absolute;
+    display: block;
+    margin-top: 7px;
+    width: 20%;
+    height: 2px;
+    border-bottom: 2px solid #000;
+}
+.fourth_section ul{
+    display: block;
+    margin-left: -34px;
+    margin-top: 25px;
+}
+
+
+/*responsive max width 575.96px*/
+
+@media (max-width:575.96px){
+    .flex{
+        display: block;
+    }
+    .navbar_right{
+        display: none;
+    }
+    .about{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .about ul li{
+        list-style: none;
+    }
+    .about h3::after{
+        margin-left: 180px;
+        width: 10%;
+    }
+}
+@media (min-width:576px) and (max-width:700px){
+    .flex{
+        display: block;
+    }
+    .blog_text{
+        left: 18%;
+    }
+    .blog_details{
+        margin-left: 15%;
+    }
+    .navbar_right{
+        display: none;
+    }
+    .about{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .about ul li{
+        list-style: none;
+    }
+    .about h3::after{
+        margin-left: 230px;
+        width: 10%;
+    }
+}
+@media (min-width:701px) and (max-width:900px){
+    .flex{
+        display: flex;
+    }
+    .blog{
+        width: 30%;
+    }
+    .blog_img img{
+        min-height: 230px;
+    }
+    .blog_details{
+        width: 85%;
+    }
+    .blog h2{
+        font-size: 14px;
+    }
+    .blog_text{
+        height: 63px;
+        width: 60px;
+        left: 18%;
+        font-size: 13px;
+    }
+    .blog_text h4,h5{
+        margin-top: 0px;
+    }
+    .navbar_right{
+        display: none;
+    }
+    .about{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .about ul li{
+        list-style: none;
+    }
+    .about h3::after{
+        margin-left: 270px;
+        width: 10%;
+    }
+
+}
+@media (min-width:901px) and (max-width:1199px){
+    .flex{
+        display: flex;
+    }
+    .blog{
+        width: 30%;
+    }
+    .blog_img img{
+        min-height: 230px;
+    }
+    .blog_details{
+        width: 85%;
+    }
+    .blog h2{
+        font-size: 14px;
+    }
+    .blog_text{
+        height: 63px;
+        width: 60px;
+        left: 18%;
+        font-size: 13px;
+    }
+    .blog_text h4,h5{
+        margin-top: 0px;
+    }
+    .navbar_right{
+        display: none;
+    }
+}
+@media (min-width:1200px) and (max-width:1500px){
+    .flex{
+        display: flex;
+    }
+    .blog{
+        width: 30%;
+    }
+    .blog_img img{
+        min-height: 380px;
+    }
+    .blog_details{
+        width: 85%;
+    }
+    .blog h2{
+        font-size: 14px;
+    }
+    .blog_text{
+        height: 70px;
+        width: 73px;
+        left: 12%;
+        font-size: 13px;
+    }
+    .blog_text h4,h5{
+        margin-top: 0px;
+    }
+}
